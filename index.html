@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+img.avatar {
+  width: 35%;
+  border-radius: 50%;
+  background-color:white;
+  margin-bottom: 7px;
+}
+.imgcontainer{
+text-align: center;
+}
+
+#main{
+    height: 350px;
+    width: 20%;
+    border: 1px solid;
+    margin: auto;
+    padding: 15px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #33a724;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:0.5;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: rgb(204, 17, 17);
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  /* width: 50%; */
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+</style>
+    <body>
+    
+<div style="border:1px solid; width: 450px; margin: 50px auto 50px auto;">
+    <!-- image -->
+    <div class="imgcontainer">
+        <img src="image.png" class="avatar">
+    </div>
+    <!-- heading -->
+    <div class="container">
+      <!-- <p>Please fill in this form to create an account.</p> -->
+      <hr>
+  <!-- email -->
+      <label><b>Email</b></label>
+      <input type="email" id="email" placeholder="Enter Email">
+  <!-- password -->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="pass" placeholder="Enter Password">
+    <!-- message -->
+      <p id="box"></p>
+  <!-- login and out -->
+      <div class="clearfix">
+        <a><button type="button" value="login" class="cancelbtn" onclick="login()">Login</button></a>
+        <button type="button" class="signupbtn" value="signup" onclick="signup()">Sign Up</button>
+
+      </div>
+    </div>
+</div>
+  
+
+
+
+
+<script src="loginup.js"></script>
+</body>
+</html>
